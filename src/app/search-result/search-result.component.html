@@ -15,7 +15,7 @@
   <button mat-stroked-button (click)="getDefaultSearchResult()">Search</button>
 </div>
 <div class="container">
-  <h1 class="title" *ngIf="suggestionValue.title != undefined && suggestionValue.title != ''"> <span>Search result for{{suggestionValue.title}}</span></h1>
+  <h1 class="title" *ngIf="suggestionValue.title != undefined && suggestionValue.title != ''"> <span>Search result for {{suggestionValue.title}}</span></h1>
 
   <div class="col-12 ">
     <mat-card class="search-item-card form-group" *ngFor="let item of searchList; index as i" (click)="redirect(item.url)">
